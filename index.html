@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Himanshu Trivedi | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aos/aos.css" />
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <!-- Header -->
+  <header>
+    <div class="header-animation"></div>
+    <nav class="navbar">
+      <div class="logo">Himanshu</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#timeline">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <div id="theme-toggle" title="Toggle theme">🌙</div>
+        <div class="hamburger" id="hamburger">☰</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="hero" class="hero-section" data-aos="fade-up">
+      <div class="hero-container">
+        <div class="hero-image" data-aos="zoom-in">
+          <img src="assets/images/profile.jpg" alt="Himanshu Profile" />
+        </div>
+        <div class="hero-text" data-aos="fade-left">
+          <h1>Hello, I'm <span class="highlight">Himanshu Trivedi</span></h1>
+          <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
+          <p>A passionate developer that blend AI, cloud computing, and web development to craft intelligent, scalable, user-centric digital solutions, immersive experiences, and web magic.</p>
+           
+          <a href="assets/resume/Himanshu_Trivedi_Resume.pdf" class="btn download-btn" download>
+  📄 Download Resume
+</a><br><br>
+          <a href="#about" class="scroll-btn">↓ Scroll Down</a>
+
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section" data-aos="fade-up">
+  <div class="about-container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hello! I'm <strong>Himanshu Trivedi</strong>, a passionate front-end developer with a strong interest in creating interactive and user-friendly websites. I love building things that live on the internet, whether it's websites, applications, or anything in between.
+        </p>
+        <p>
+          My journey into development began with curiosity and has evolved into a deep-rooted passion. I am a 3rd year Computer Science and Engineering Student at Vellore Institute Of Technology,Bhopal, where I built a solid foundation in programming, software design, and modern web technologies.
+        </p>
+        <p>
+            In addition to front-end development, I’ve been actively expanding my expertise in Artificial Intelligence, Machine Learning, and Cloud Computing. This blend of skills allows me to design intelligent, scalable solutions — from responsive UI to data-driven systems deployed on the cloud.
+        </p>
+        <p>
+            I'm always excited to learn, improve user experience, and bring ideas to life through clean, efficient code and innovative thinking.
+
+        </p>
+      </div>
+      <div class="about-image" data-aos="zoom-in">
+        <img src="assets/images/about.png" alt="About Himanshu" />
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="skills-section" data-aos="fade-up">
+  <div class="skills-container">
+    <h2 class="section-title" data-aos="zoom-in">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-item" data-aos="zoom-in" title="HTML5">
+        <img src="assets/icons/html.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="CSS3">
+        <img src="assets/icons/css.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="JavaScript">
+        <img src="assets/icons/js.png" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="React">
+        <img src="assets/icons/react.png" alt="React" />
+        <p>React</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Git">
+        <img src="assets/icons/git.png" alt="Git" />
+        <p>Git</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="GitHub">
+        <img src="assets/icons/github.png" alt="GitHub" />
+        <p>GitHub</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="AI-ML">
+        <img src="assets/icons/aiml.png" alt="AI-ML" />
+        <p>AI-ML</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Cloud Computing">
+        <img src="assets/icons/cloud.png" alt="Cloud Computing" />
+        <p>Cloud Computing</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Python">
+        <img src="assets/icons/python.png" alt="Python" />
+        <p>Python</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" title="Java">
+        <img src="assets/icons/java.png" alt="Java" />
+        <p>Java</p>
+      </div>
+    </div>
+
+    <div class="skillbars-container" data-aos="fade-up">
+      <h3>My Proficiency</h3>
+      <div class="skill-bar" style="--bar-width: 95%" data-progress="95%">
+        <span></span> <label>AI-ML</label>
+      </div>
+      <div class="skill-bar" style="--bar-width: 90%" data-progress="90%">
+        <span></span> <label>HTML-CSS-JS</label>
+      </div>
+      <div class="skill-bar" style="--bar-width: 80%" data-progress="80%">
+        <span></span> <label>Cloud Computing</label>
+      </div>
+       <div class="skill-bar" style="--bar-width: 70%" data-progress="70%">
+        <span></span> <label>React</label>
+      </div>
+      <div class="skill-bar" style="--bar-width: 90%" data-progress="90%">
+        <span></span> <label>JAVA</label>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="projects-section" data-aos="fade-up">
+  <div class="projects-container">
+    <h2 class="section-title" data-aos="zoom-in">Projects</h2>
+
+    <div class="projects-grid">
+      <!-- Project Card -->
+      <div class="project-card" data-aos="zoom-in-up">
+        <img src="assets/projects/project1.png" alt="Project 1" />
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio with dark/light mode, animations & scroll effects.</p>
+          <div class="tech-used">HTML • CSS • JS</div>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+            <a href="#" target="_blank" class="btn outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards here -->
+    </div>
+  </div>
+</section>
+<section id="projects" class="projects-section" data-aos="fade-up">
+  <div class="projects-container">
+    <h2 class="section-title" data-aos="zoom-in">Projects</h2>
+
+    <!-- Filters -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="games">Games</button>
+      <button class="filter-btn" data-filter="apps">Apps</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <img src="assets/projects/project1.jpg" alt="Project 1" />
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio with animations.</p>
+          <div class="tech-used">HTML, CSS, JS</div>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn">Live</a>
+            <a href="#" target="_blank" class="btn outline github-btn" data-repo="username/portfolio">
+              GitHub ⭐
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-category="games">
+        <img src="assets/projects/project2.jpg" alt="Game Project" />
+        <div class="project-info">
+          <h3>2D Platformer</h3>
+          <p>A simple web-based 2D game.</p>
+          <div class="tech-used">JavaScript, Canvas</div>
+          <div class="project-links">
+            <a href="#" class="btn open-modal">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 class="modal-title">Project Title</h3>
+      <p class="modal-desc">Project description here...</p>
+    </div>
+  </div>
+</section>
+<section id="certificates" class="certificates-section" data-aos="fade-up">
+  <div class="certificates-container">
+    <h2 class="section-title" data-aos="zoom-in">Certificates</h2>
+
+    <div class="certificates-grid" id="certificateGrid">
+      <!-- Certificate cards will be inserted here via JS -->
+    </div>
+    <button id="toggleCertificatesBtn" class="btn">Show More</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modalImage" src="" alt="Certificate Preview" />
+    </div>
+  </div>
+</section>
+
+<section id="badges" class="badges-section" data-aos="fade-up">
+  <div class="badges-container">
+    <h2 class="section-title" data-aos="zoom-in">Earned Badges</h2>
+    <p class="badge-intro">I’ve successfully completed multiple skill tracks on Google Cloud Skills Boost. You can view all my badges through the button below.</p>
+
+    <div class="center-btn">
+      <a href="https://www.cloudskillsboost.google/public_profiles/38a8d82c-cdd8-4d86-9c12-cd56d0bd271f?_gl=1*csvcjn*_up*MQ..*_ga*MTk2Mzk0MzEwNy4xNzUyNzcxMTky*_ga_2X30ZRBDSG*czE3NTI3NzExOTEkbzEkZzAkdDE3NTI3NzExOTEkajYwJGwwJGgw" 
+         target="_blank" 
+         class="btn badge-btn" 
+         data-aos="zoom-in">
+         🏆View All Badges
+      </a>
+    </div>
+  </div>
+</section>
+<section id="scorecards" class="scorecard-section" data-aos="fade-up">
+  <div class="scorecard-container">
+    <h2 class="section-title" data-aos="zoom-in">Internship Scorecards</h2>
+
+    <div class="scorecard-grid">
+      <!-- AI Scorecard -->
+      <div class="scorecard-card" data-aos="zoom-in">
+        <h3>Artificial Intelligence In Partnership with Google</h3>
+        <p>Issued in collaboration with Google</p>
+        <a href="assets/scorecards/ai-google-scorecard.png" target="_blank" class="btn">View Scorecard</a>
+      </div>
+
+      <!-- Cloud Scorecard -->
+      <div class="scorecard-card" data-aos="zoom-in">
+        <h3>Fundamentals of Cloud</h3>
+        <p>Issued by IBM</p>
+        <a href="assets/scorecards/cloud-ibm-scorecard.png" target="_blank" class="btn">View Scorecard</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline" class="timeline-section" data-aos="fade-up">
+  <h2 class="section-title" data-aos="zoom-in">Experience</h2>
+  <div class="timeline-container">
+    <div class="timeline-item" data-aos="fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">May-June 2025 </div>
+      <div class="timeline-content">
+        <h3>Artificial Intelligence Intern — SmartBridge (In partnership with Google)</h3>
+        <p>SmartBridge Tech Pvt. Ltd.<br>Contributed to cutting-edge AI projects, gaining hands-on experience in machine learning models and Google-powered technologies during a prestigious industrial internship program.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">June-July 2025 </div>
+      <div class="timeline-content">
+        <h3>Cloud Computing Trainee — IBM Fundamentals of Cloud</h3>
+        <p>IBM Pvt. Ltd.<br>Acquired in-depth understanding of cloud infrastructure, including IBM Cloud Virtual Servers, Cloud Object Storage, and Kubernetes orchestration. Practical experience with deploying, managing, and scaling cloud-native applications using IBM Cloud services and tools. Explored cloud security, networking, and serverless computing concepts.</p>
+      </div>
+    </div>
+
+    <!-- Add more timeline items easily -->
+  </div>
+</section>
+<section id="contact" class="contact-section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title" data-aos="zoom-in">Contact Me</h2>
+    <div class="contact-wrapper">
+
+      <form id="contactForm" action="https://formspree.io/f/xzzvzbpd" method="POST" class="contact-form" data-aos="fade-right">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- ✅ Success/Error message placeholder -->
+      <p id="formStatus" style="margin-top: 10px;"></p>
+
+      <div class="contact-info" data-aos="fade-left">
+        <h3>Let's Connect</h3>
+        <p><strong>Email:</strong> trivedihimanshu.019@gmail.com</p>
+        <p><strong>Location:</strong> KANPUR, INDIA</p>
+        <div class="social-icons">
+          <a href="https://github.com/Himanshu-Trivedi9026" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/himanshu-trivedi-335944350/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:trivedihimanshu.019@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer" data-aos="fade-up">
+  <div class="container">
+    <div class="footer-content">
+      <p>© <span id="year"></span> Himanshu Trivedi. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Himanshu-Trivedi9026" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/himanshu-trivedi-335944350" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:trivedihimanshu.019@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/9026410701" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <a href="#hero" class="scroll-to-top" title="Back to top">⬆️</a>
+  </div>
+</footer>
+
+
+<!-- Add this to script.js -->
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  </main>
+
+  <!-- JS -->
+  <script src="aos/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
