@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/portfolio-website",
   trailingSlash: true,
   images: { unoptimized: true },
-  assetPrefix: process.env.NODE_ENV === "production" ? "/portfolio-website" : undefined,
 };
 
 export default nextConfig;
