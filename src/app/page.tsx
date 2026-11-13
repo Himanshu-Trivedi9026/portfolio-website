@@ -11,13 +11,15 @@ const projects = [
   { name: "Unemployment Forecasting Model", category: "MACHINE LEARNING", description: "A forecasting project exploring employment trends through data preparation, analysis, and predictive modelling.", stack: ["Python", "Pandas", "Machine Learning"], repo: "Unemployment_Forecasting_Model" },
   { name: "Plant Disease Detection", category: "COMPUTER VISION", description: "An image-based plant disease classification project applying deep learning techniques to agricultural imagery.", stack: ["Python", "Deep Learning", "Computer Vision"], repo: "AI-Plant-Disease-Detection" },
   { name: "Last-Mile Delivery Tracker", category: "FULL-STACK / LOGISTICS", description: "A role-based logistics platform for order lifecycle management, configurable delivery pricing, zone detection, agent assignment, live tracking, rescheduling, and customer notifications.", stack: ["Next.js 16", "TypeScript", "Supabase", "PostgreSQL", "Resend", "Twilio"], repo: "last-mile-delivery-tracker" },
+  { name: "SAMARTH AI — Business Intelligence", category: "AI / DATA INTELLIGENCE", description: "An AI-powered business intelligence system for duplicate-business detection, Unified Business Identity generation, explainable similarity scoring, CSV ingestion, activity intelligence, and human review workflows.", stack: ["React", "FastAPI", "Python", "Pandas", "Entity Matching", "Recharts"], repo: "samarth-ai-prototype" },
+  { name: "Chemical Equipment Parameter Visualizer", category: "ENGINEERING / DATA VISUALIZATION", description: "A hybrid web and desktop application that analyzes chemical-equipment CSV data, computes operational statistics, visualizes flowrate, pressure, and temperature, and exports analytical PDF reports.", stack: ["Django REST Framework", "React", "Python", "PyQt5", "Chart.js", "SQLite"], repo: "Chemical-Equipment-Visualizer" },
 ];
 
 const skills = [
-  ["AI & Generative AI", "Machine Learning · Deep Learning · LLMs · RAG · AI Agents", "icons/aiml.png"],
+  ["AI & Generative AI", "Machine Learning · Deep Learning · LLMs · RAG · AI Agents · Computer Vision", "icons/aiml.png"],
   ["Languages", "Python · Java · JavaScript · TypeScript · SQL", "icons/python.png"],
-  ["Full-Stack", "React · Next.js · Node.js · REST APIs", "icons/react.png"],
-  ["Cloud & Developer Tools", "Cloud platforms · Git · GitHub · Linux", "icons/cloud.png"],
+  ["Full-Stack & Backend", "React · Next.js · Node.js · FastAPI · Flask · Django · REST APIs", "icons/react.png"],
+  ["Data & Developer Tools", "PostgreSQL · Supabase · Pandas · Git · GitHub · Linux · Cloud", "icons/cloud.png"],
 ];
 
 const certificates = [
