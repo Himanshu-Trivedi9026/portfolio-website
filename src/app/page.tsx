@@ -1,19 +1,33 @@
-import { ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Github, Linkedin, ExternalLink } from "lucide-react";
 
 const projects = [
-  { name: "LYRA — Local-first AI Assistant", category: "AI SYSTEMS", description: "A hybrid personal assistant combining conversational interfaces, persistent memory, plugin-based automation, and flexible model routing.", stack: ["Python", "Flask", "LLMs", "Ollama", "RAG"] },
-  { name: "Fundora — Crowdfunding Platform", category: "FULL-STACK", description: "A crowdfunding experience with authentication, project discovery, payment processing, and an integrated AI chat assistant.", stack: ["Next.js", "Tailwind", "Supabase", "Razorpay"] },
-  { name: "Behavioral Biometric Authentication", category: "APPLIED ML", description: "A browser-based behavioral data collection system capturing keyboard and mouse interaction signals for authentication research.", stack: ["React", "Vite", "JavaScript", "Data Processing"] },
-  { name: "AI-driven Health Assistant", category: "GENERATIVE AI", description: "An AI health information assistant built around a conversational interface and a Python API backend.", stack: ["Python", "Flask", "AI", "REST API"] },
-  { name: "Unemployment Forecasting Model", category: "MACHINE LEARNING", description: "A forecasting project exploring employment trends through data preparation, analysis, and predictive modelling.", stack: ["Python", "Pandas", "Machine Learning"] },
-  { name: "Plant Disease Detection", category: "COMPUTER VISION", description: "An image-based plant disease classification project applying deep learning techniques to agricultural imagery.", stack: ["Python", "Deep Learning", "Computer Vision"] },
+  { name: "LYRA — Local-first AI Assistant", category: "AI SYSTEMS", description: "A hybrid personal assistant with voice and text interaction, persistent memory, plugin-based automation, model switching, and resilient fallback behaviour.", stack: ["Python", "Flask", "LLMs", "Ollama", "Hugging Face"], repo: "lyra-ai-assistant" },
+  { name: "Fundora — Crowdfunding Platform", category: "FULL-STACK", description: "A crowdfunding platform with authentication, project discovery, Supabase data, Razorpay payments, and an integrated AI chat experience.", stack: ["Next.js", "Tailwind", "Supabase", "Razorpay"], repo: "Fundora" },
+  { name: "Behavioral Biometric Authentication", category: "APPLIED ML", description: "A browser-based behavioral data collection system capturing keyboard and mouse interaction signals for authentication research.", stack: ["React", "Vite", "JavaScript", "Data Processing"], repo: "behavioral-biometric-authentication" },
+  { name: "AI-driven Health Assistant", category: "GENERATIVE AI", description: "A conversational health information assistant built around a Python API backend.", stack: ["Python", "Flask", "AI", "REST API"], repo: "AI-driven-health-assistant" },
+  { name: "Unemployment Forecasting Model", category: "MACHINE LEARNING", description: "A forecasting project exploring employment trends through data preparation, analysis, and predictive modelling.", stack: ["Python", "Pandas", "Machine Learning"], repo: "Unemployment_Forecasting_Model" },
+  { name: "Plant Disease Detection", category: "COMPUTER VISION", description: "An image-based plant disease classification project applying deep learning techniques to agricultural imagery.", stack: ["Python", "Deep Learning", "Computer Vision"], repo: "AI-Plant-Disease-Detection" },
 ];
 
 const skills = [
-  ["AI & Generative AI", "Machine Learning · Deep Learning · LLMs · RAG"],
+  ["AI & Generative AI", "Machine Learning · Deep Learning · LLMs · RAG · AI Agents"],
   ["Languages", "Python · Java · JavaScript · TypeScript · SQL"],
   ["Full-Stack", "React · Next.js · Node.js · REST APIs"],
-  ["Cloud & Tools", "Cloud platforms · Git · GitHub · Linux"],
+  ["Cloud & Developer Tools", "Cloud platforms · Git · GitHub · Linux"],
+];
+
+const certificates = [
+  "AI & Machine Learning",
+  "Python and C Programming",
+  "Java Programming",
+  "Getting Started with AI",
+  "AI Internship — SmartBridge",
+  "IBM Cloud Fundamentals",
+  "Journey to Cloud",
+  "MATLAB",
+  "NPTEL",
+  "Web Development",
+  "Project Completion",
 ];
 
 export default function Home() {
@@ -23,7 +37,7 @@ export default function Home() {
         <nav className="container nav" aria-label="Main navigation">
           <a className="brand" href="#home">HT<span>.</span></a>
           <div className="nav-links">
-            <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+            <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
           </div>
           <a className="button" href="https://github.com/Himanshu-Trivedi9026" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14}/></a>
         </nav>
@@ -37,13 +51,13 @@ export default function Home() {
             <p className="lead">I’m Himanshu Trivedi — a Computer Science student and developer interested in turning AI research and modern software engineering into practical products.</p>
             <div className="actions">
               <a className="button button-primary" href="#projects">Explore my work <ArrowDownRight size={15}/></a>
-              <a className="button" href="mailto:himanshutrivedi@example.com"><Mail size={14}/> Get in touch</a>
+              <a className="button" href="https://www.linkedin.com/in/himanshu-trivedi-878aa6373" target="_blank" rel="noreferrer"><Linkedin size={14}/> Connect with me</a>
             </div>
           </div>
           <aside className="hero-panel">
             <div className="panel-top"><span>PROFILE / 2026</span><span className="status">Building</span></div>
             <div className="panel-monogram">HT</div>
-            <div className="panel-caption">Computer Science · AI Specialization<br/>VIT Bhopal University</div>
+            <div className="panel-caption">Computer Science · AI Specialization<br/>VIT Bhopal University · Class of 2027</div>
             <div className="panel-tags"><span className="tag">AI Engineering</span><span className="tag">Product Development</span><span className="tag">Full-Stack</span></div>
           </aside>
         </section>
@@ -56,7 +70,7 @@ export default function Home() {
               <div className="info-card"><strong>Current focus</strong><span>LLM applications, RAG, AI agents, and applied ML</span></div>
               <div className="info-card"><strong>Engineering</strong><span>Web platforms, APIs, integrations, and automation</span></div>
               <div className="info-card"><strong>Education</strong><span>B.Tech CS — AI specialization</span></div>
-              <div className="info-card"><strong>Based at</strong><span>VIT Bhopal University, India</span></div>
+              <div className="info-card"><strong>Expected graduation</strong><span>2027 · VIT Bhopal, India</span></div>
             </div>
           </div>
         </section>
@@ -67,8 +81,8 @@ export default function Home() {
         </section>
 
         <section className="section" id="projects">
-          <div className="section-heading"><div><div className="eyebrow">Selected work</div><h2>Projects with purpose.</h2></div><p>A selection of systems and experiments across AI, machine learning, and full-stack development.</p></div>
-          <div className="project-grid">{projects.map((project,index)=><article className="project-card" key={project.name}><div className="project-meta"><span>{project.category}</span><span>0{index+1}</span></div><h3>{project.name}</h3><p>{project.description}</p><div className="project-stack">{project.stack.map(item=><span key={item}>{item}</span>)}</div></article>)}</div>
+          <div className="section-heading"><div><div className="eyebrow">Selected work</div><h2>Projects with purpose.</h2></div><p>A selection of systems and experiments across AI, machine learning, and full-stack development. Explore source code for implementation details.</p></div>
+          <div className="project-grid">{projects.map((project,index)=><article className="project-card" key={project.name}><div className="project-meta"><span>{project.category}</span><span>0{index+1}</span></div><h3>{project.name}</h3><p>{project.description}</p><div className="project-stack">{project.stack.map(item=><span key={item}>{item}</span>)}</div><a className="project-link" href={`https://github.com/Himanshu-Trivedi9026/${project.repo}`} target="_blank" rel="noreferrer">View repository <ExternalLink size={13}/></a></article>)}</div>
         </section>
 
         <section className="section" id="experience">
@@ -79,8 +93,21 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section" id="achievements">
+          <div className="section-heading"><div><div className="eyebrow">Recognition & credentials</div><h2>Milestones along the way.</h2></div><p>Hackathon participation, technical learning, and certificates that document continued growth.</p></div>
+          <div className="timeline">
+            <article className="timeline-card"><time>2025 · NASSCOM Tech Developer Hackathon</time><h3>Shortlisted · Final 20 teams</h3><p>Advanced to the final 20 teams in the NASSCOM Tech Developer Hackathon.</p></article>
+            <article className="timeline-card"><time>2025 · Inya.ai / Gnani.ai Buildathon</time><h3>Shortlisted</h3><p>Selected for the shortlisted stage of the buildathon.</p></article>
+            <article className="timeline-card"><time>2025 · AI for Bharat Hackathon</time><h3>Shortlisted</h3><p>Selected for the shortlisted stage of the AI for Bharat Hackathon.</p></article>
+            <article className="timeline-card"><time>Google Cloud Skills Boost</time><h3>24 learning badges</h3><p>Completed a collection of cloud and technology learning activities.</p></article>
+          </div>
+          <h3 className="subheading">Certificates in the current portfolio</h3>
+          <div className="certificate-grid">{certificates.map((certificate)=><div className="certificate-item" key={certificate}><span>{certificate}</span><span className="certificate-mark">↗</span></div>)}</div>
+          <p className="credential-note">Certificate image assets are retained in the repository. The next content pass will connect each card to its matching image and verified credential URL.</p>
+        </section>
+
         <section className="section" id="contact">
-          <div className="contact-panel"><div><div className="eyebrow">Have a project in mind?</div><h2>Let’s build something meaningful.</h2><p>Open to conversations around AI engineering, full-stack development, and opportunities to collaborate.</p></div><a className="button button-primary" href="mailto:himanshutrivedi@example.com">Start a conversation <ArrowUpRight size={15}/></a></div>
+          <div className="contact-panel"><div><div className="eyebrow">Have a project in mind?</div><h2>Let’s build something meaningful.</h2><p>Open to conversations around AI engineering, full-stack development, and opportunities to collaborate.</p></div><a className="button button-primary" href="https://www.linkedin.com/in/himanshu-trivedi-878aa6373" target="_blank" rel="noreferrer">Start a conversation <ArrowUpRight size={15}/></a></div>
         </section>
 
         <footer className="footer"><span>© {new Date().getFullYear()} Himanshu Trivedi. Built with intent.</span><span><a href="https://github.com/Himanshu-Trivedi9026" aria-label="GitHub"><Github size={15}/></a>　<a href="https://www.linkedin.com/in/himanshu-trivedi-878aa6373" aria-label="LinkedIn"><Linkedin size={15}/></a></span></footer>
