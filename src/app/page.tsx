@@ -6,10 +6,11 @@ const asset = (path: string) => `${basePath}/assets/${path}`;
 const projects = [
   { name: "LYRA — Local-first AI Assistant", category: "AI SYSTEMS", description: "A hybrid personal assistant with voice and text interaction, persistent memory, plugin-based automation, model switching, and resilient fallback behaviour.", stack: ["Python", "Flask", "LLMs", "Ollama", "Hugging Face"], repo: "lyra-ai-assistant" },
   { name: "Fundora — Crowdfunding Platform", category: "FULL-STACK", description: "A crowdfunding platform with authentication, project discovery, Supabase data, Razorpay payments, and an integrated AI chat experience.", stack: ["Next.js", "Tailwind", "Supabase", "Razorpay"], repo: "Fundora" },
-  { name: "Behavioral Biometric Authentication", category: "APPLIED ML", description: "A browser-based behavioral data collection system capturing keyboard and mouse interaction signals for authentication research.", stack: ["React", "Vite", "JavaScript", "Data Processing"], repo: "behavioral-biometric-authentication" },
+  { name: "Behavioral Biometric Authentication", category: "APPLIED ML", description: "A research prototype combining browser behaviour capture, frozen preprocessing, a Siamese CNN-GRU encoder, and continuous verification. Model efficacy is not yet established on real enrolment data.", stack: ["React", "Vite", "JavaScript", "Data Processing"], repo: "behavioral-biometric-authentication" },
   { name: "AI-driven Health Assistant", category: "GENERATIVE AI", description: "A conversational health information assistant built around a Python API backend.", stack: ["Python", "Flask", "AI", "REST API"], repo: "AI-driven-health-assistant" },
   { name: "Unemployment Forecasting Model", category: "MACHINE LEARNING", description: "A forecasting project exploring employment trends through data preparation, analysis, and predictive modelling.", stack: ["Python", "Pandas", "Machine Learning"], repo: "Unemployment_Forecasting_Model" },
   { name: "Plant Disease Detection", category: "COMPUTER VISION", description: "An image-based plant disease classification project applying deep learning techniques to agricultural imagery.", stack: ["Python", "Deep Learning", "Computer Vision"], repo: "AI-Plant-Disease-Detection" },
+  { name: "Last-Mile Delivery Tracker", category: "FULL-STACK / LOGISTICS", description: "A role-based logistics platform for order lifecycle management, configurable delivery pricing, zone detection, agent assignment, live tracking, rescheduling, and customer notifications.", stack: ["Next.js 16", "TypeScript", "Supabase", "PostgreSQL", "Resend", "Twilio"], repo: "last-mile-delivery-tracker" },
 ];
 
 const skills = [
@@ -56,7 +57,7 @@ export default function Home() {
             <p className="lead">I’m Himanshu Trivedi — a Computer Science student and developer interested in turning AI research and modern software engineering into practical products.</p>
             <div className="actions">
               <a className="button button-primary" href="#projects">Explore my work <ArrowDownRight size={15}/></a>
-              <a className="button" href="https://raw.githubusercontent.com/Himanshu-Trivedi9026/Himanshu_Resume/main/ResumeHimanshu.pdf" target="_blank" rel="noreferrer"><Download size={14}/> View resume</a>
+              <a className="button" href={asset("resume/ResumeHimanshu.pdf")} target="_blank" rel="noreferrer"><Download size={14}/> View resume</a>
             </div>
           </div>
           <aside className="hero-panel">
@@ -88,7 +89,7 @@ export default function Home() {
         </section>
 
         <section className="section" id="projects">
-          <div className="section-heading"><div><div className="eyebrow">Selected work</div><h2>Projects with purpose.</h2></div><p>A selection of systems and experiments across AI, machine learning, and full-stack development. Explore source code for implementation details.</p></div>
+          <div className="section-heading"><div><div className="eyebrow">Selected work</div><h2>Projects with purpose.</h2></div><p>A selection of systems and experiments across AI, machine learning, logistics, and full-stack development. Explore source code for implementation details.</p></div>
           <div className="project-grid">{projects.map((project,index)=><article className="project-card" key={project.name}><div className="project-meta"><span>{project.category}</span><span>0{index+1}</span></div><h3>{project.name}</h3><p>{project.description}</p><div className="project-stack">{project.stack.map(item=><span key={item}>{item}</span>)}</div><a className="project-link" href={`https://github.com/Himanshu-Trivedi9026/${project.repo}`} target="_blank" rel="noreferrer">View repository <ExternalLink size={13}/></a></article>)}</div>
         </section>
 
