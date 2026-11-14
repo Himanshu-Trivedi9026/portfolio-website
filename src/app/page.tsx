@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowDownRight, ArrowUpRight, Github, Linkedin, ExternalLink, Mail, Download } from "lucide-react";
 
 const basePath = "/portfolio-website";
@@ -24,16 +25,16 @@ const skills = [
 
 const certificates = [
   ["Artificial Intelligence Internship", "SmartBridge · July 2025", "certificates/ai-internship.png"],
-  ["IBM Cloud Essentials", "IBM · July 2025", "certificates/ibmcloud.png"],
+  ["Introduction to Cloud", "Adroit Technologies · June 2025", "certificates/ibmcloud.png"],
   ["Project Completion", "SmartBridge · July 2025", "certificates/project-completion.png"],
-  ["Python & C Programming", "VITyarthi · July 2025", "certificates/PythonandC-Certificate.jpg"],
+  ["Certificate Course in C Language & Python", "Data Expert · August 2023", "certificates/PythonandC-Certificate.jpg"],
   ["Java Programming", "VITyarthi · April 2025", "certificates/Javacertificate.png"],
-  ["AI & Machine Learning", "IBM · May 2024", "certificates/AIML.png"],
+  ["Fundamentals of AI and ML", "VITyarthi · May 2024", "certificates/AIML.png"],
   ["Getting Started with AI", "IBM · July 2025", "certificates/gettingstartedwithai.png"],
   ["Journey to Cloud", "IBM · July 2025", "certificates/journeytocloud.png"],
-  ["NPTEL Certification", "NPTEL · 2025", "certificates/nptel.png"],
-  ["Web Development", "VITyarthi · July 2025", "certificates/webdev.png"],
-  ["MATLAB Onramp", "MathWorks · July 2025", "certificates/matlab.png"],
+  ["Introduction to Machine Learning", "NPTEL / SWAYAM · January–April 2025", "certificates/nptel.png"],
+  ["Web Development Mentorship Program", "Deevelo X / Launched Global · March–April 2025", "certificates/webdev.png"],
+  ["MATLAB Onramp", "MathWorks · August 2023", "certificates/matlab.png"],
 ];
 
 const badgesUrl = "https://www.cloudskillsboost.google/public_profiles/38a8d82c-cdd8-4d86-9c12-cd56d0bd271f";
@@ -64,7 +65,7 @@ export default function Home() {
           </div>
           <aside className="hero-panel">
             <div className="panel-top"><span>PROFILE / 2026</span><span className="status">Building</span></div>
-            <img className="profile-photo" src={asset("images/profile.jpg")} alt="Himanshu Trivedi" />
+            <Image className="profile-photo" src={asset("images/profile.jpg")} alt="Himanshu Trivedi" width={142} height={142} unoptimized />
             <div className="panel-caption">Computer Science · AI Specialization<br/>VIT Bhopal University · Class of 2027</div>
             <div className="panel-tags"><span className="tag">AI Engineering</span><span className="tag">Product Development</span><span className="tag">Full-Stack</span></div>
           </aside>
@@ -74,7 +75,7 @@ export default function Home() {
           <div className="section-heading"><div><div className="eyebrow">A little about me</div><h2>Curiosity, engineered.</h2></div><p>Focused on building reliable software and intelligent systems that solve real problems.</p></div>
           <div className="about-grid">
             <div><p className="body-copy">I’m pursuing a B.Tech in Computer Science with an AI specialization at VIT Bhopal. My work spans machine learning, Generative AI, backend systems, and full-stack applications. I enjoy taking ideas from problem definition through implementation, iteration, and deployment — with an emphasis on clean architecture and practical value.</p><p className="body-copy">I’m particularly interested in LLM applications, retrieval-augmented generation, AI agents, and building end-to-end products that combine intelligent backends with thoughtful user experiences.</p></div>
-            <div className="about-visual"><img src={asset("images/about.png")} alt="Illustration from my original portfolio" /></div>
+            <div className="about-visual"><Image src={asset("images/about.png")} alt="Illustration from my original portfolio" width={620} height={360} unoptimized /></div>
             <div className="info-grid">
               <div className="info-card"><strong>Current focus</strong><span>LLM applications, RAG, AI agents, and applied ML</span></div>
               <div className="info-card"><strong>Engineering</strong><span>Web platforms, APIs, integrations, and automation</span></div>
@@ -86,8 +87,8 @@ export default function Home() {
 
         <section className="section" id="skills">
           <div className="section-heading"><div><div className="eyebrow">Technical toolkit</div><h2>Skills & technologies.</h2></div><p>A practical mix of AI foundations, application engineering, and development tooling.</p></div>
-          <div className="skill-grid">{skills.map(([title,items,icon])=><article className="skill-card" key={title}><img src={asset(icon)} alt="" /><strong>{title}</strong><span>{items}</span></article>)}</div>
-          <div className="tool-icons" aria-label="Technologies"><img src={asset("icons/html.png")} alt="HTML"/><img src={asset("icons/css.png")} alt="CSS"/><img src={asset("icons/js.png")} alt="JavaScript"/><img src={asset("icons/react.png")} alt="React"/><img src={asset("icons/python.png")} alt="Python"/><img src={asset("icons/java.png")} alt="Java"/><img src={asset("icons/git.png")} alt="Git"/><img src={asset("icons/github.png")} alt="GitHub"/><img src={asset("icons/dsa.webp")} alt="Data structures and algorithms"/></div>
+          <div className="skill-grid">{skills.map(([title,items,icon])=><article className="skill-card" key={title}><Image src={asset(icon)} alt="" width={30} height={30} unoptimized /><strong>{title}</strong><span>{items}</span></article>)}</div>
+          <div className="tool-icons" aria-label="Technologies"><Image src={asset("icons/html.png")} alt="HTML" width={28} height={28} unoptimized /><Image src={asset("icons/css.png")} alt="CSS" width={28} height={28} unoptimized /><Image src={asset("icons/js.png")} alt="JavaScript" width={28} height={28} unoptimized /><Image src={asset("icons/react.png")} alt="React" width={28} height={28} unoptimized /><Image src={asset("icons/python.png")} alt="Python" width={28} height={28} unoptimized /><Image src={asset("icons/java.png")} alt="Java" width={28} height={28} unoptimized /><Image src={asset("icons/git.png")} alt="Git" width={28} height={28} unoptimized /><Image src={asset("icons/github.png")} alt="GitHub" width={28} height={28} unoptimized /><Image src={asset("icons/dsa.webp")} alt="Data structures and algorithms" width={28} height={28} unoptimized /></div>
         </section>
 
         <section className="section" id="projects">
@@ -112,11 +113,11 @@ export default function Home() {
             <article className="timeline-card"><time>Google Cloud Skills Boost</time><h3>24 learning badges</h3><p>Completed a collection of cloud and technology learning activities. <a className="inline-link" href={badgesUrl} target="_blank" rel="noreferrer">View public badge profile <ExternalLink size={12}/></a></p></article>
           </div>
           <h3 className="subheading">Certificates</h3>
-          <div className="certificate-grid">{certificates.map(([title,issuer,image])=><a className="certificate-card" href={asset(image)} target="_blank" rel="noreferrer" key={image}><img src={asset(image)} alt={`${title} certificate preview`} loading="lazy"/><span className="certificate-title">{title}</span><span className="certificate-issuer">{issuer}</span><span className="certificate-open">View certificate <ExternalLink size={12}/></span></a>)}</div>
+          <div className="certificate-grid">{certificates.map(([title,issuer,image])=><a className="certificate-card" href={asset(image)} target="_blank" rel="noreferrer" key={image}><Image src={asset(image)} alt={`${title} certificate preview`} width={420} height={280} loading="lazy" unoptimized /><span className="certificate-title">{title}</span><span className="certificate-issuer">{issuer}</span><span className="certificate-open">View certificate <ExternalLink size={12}/></span></a>)}</div>
           <h3 className="subheading">Internship scorecards</h3>
           <div className="scorecard-grid">
-            <a className="scorecard-card" href={asset("scorecards/ai-google-scorecard.png")} target="_blank" rel="noreferrer"><img src={asset("scorecards/ai-google-scorecard.png")} alt="Artificial Intelligence internship scorecard" loading="lazy"/><span>Artificial Intelligence · SmartBridge / Google</span><small>Open scorecard <ExternalLink size={12}/></small></a>
-            <a className="scorecard-card" href={asset("scorecards/cloud-ibm-scorecard.png")} target="_blank" rel="noreferrer"><img src={asset("scorecards/cloud-ibm-scorecard.png")} alt="IBM Cloud internship scorecard" loading="lazy"/><span>Cloud Fundamentals · IBM</span><small>Open scorecard <ExternalLink size={12}/></small></a>
+            <a className="scorecard-card" href={asset("scorecards/ai-google-scorecard.png")} target="_blank" rel="noreferrer"><Image src={asset("scorecards/ai-google-scorecard.png")} alt="Artificial Intelligence internship scorecard" width={800} height={520} loading="lazy" unoptimized /><span>Artificial Intelligence · SmartBridge / Google</span><small>Open scorecard <ExternalLink size={12}/></small></a>
+            <a className="scorecard-card" href={asset("scorecards/cloud-ibm-scorecard.png")} target="_blank" rel="noreferrer"><Image src={asset("scorecards/cloud-ibm-scorecard.png")} alt="IBM Cloud internship scorecard" width={800} height={520} loading="lazy" unoptimized /><span>Cloud Fundamentals · IBM</span><small>Open scorecard <ExternalLink size={12}/></small></a>
           </div>
         </section>
 
